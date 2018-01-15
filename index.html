@@ -1,1 +1,305 @@
-<!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>LabCar</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="assets/images/logoForma.png" class="img-responsive center-block " alt="Responsive image">
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Viaja</a></li>
+            <li><a href="#">Conduce</a></li>
+            <!-- Modal -->
+            <li><a href="#" data-toggle="modal" data-target="#signin">Inicia Sesion</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- sección principal -->
+  <section class="bg-image">
+    <div class="bg-color">
+      <!--Movil-->
+      <div class="box-text visible-xs">
+        <h2>Comienza a viajar<br>con<img src="assets/images/logoBlanco.png" alt="Responsive image"></h2>
+        <button type="button" class="btn btn-default btn-lg btn-app"><strong>Descarga el app</strong></button>
+      </div>
+      <!--Desktop -->
+      <div class="box-text hidden-xs">
+        <h1>Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
+        <h3>Viaja con<img src="assets/images/logoBlanco.png" alt="Responsive image"></h3>
+        <!-- Boton para modal -->
+        <button type="button" class="btn btn-default btn-app text-uppercase" data-toggle="modal" data-target="#signup"><strong>Registrate</strong></button>
+        <hr class="line text-center">
+        <!-- Boton para modal -->
+        <button type="button" class="btn btn-default btn-app" data-toggle="modal" data-target="#affiliate"><strong>Convierte en conductor</strong></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Segunda sección -->
+  <section class="bg-color">
+    <div class="container">
+      <div class="row box">
+        <div class="col-xs-12 col-sm-6">
+          <div class="box-phone">
+            <h2 class="visible-xs text-center">La nueva app</h2>
+            <figure>
+              <img src="assets/images/iPhone6Plus.png" class="img-responsive center-block" alt="Responsive image">
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 hidden-xs">
+          <div class="box-text">
+            <h2>Descarga la nueva app</h2>
+            <p class="text-left">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <p class="text-left">Con solo tocar un botón, un auto llega justo a tu ubicación. Subete y no te preocupes: tu conductor sabe exactamente a donde ir.</p>
+          </div>
+        </div>
+      </div>
+      <p class="visible-xs text-center">Llega a tu destino aún más rapido</p>
+    </div>
+  </section>
+  <!-- Tercera sección -->
+  <section class="bg-driver">
+    <div class="box-driver">
+      <h2>Conduce cuando quieras</h2>
+      <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+      <button type="button" class="btn btn-default btn-lg bg-color">Conviértete en conductor</button>
+    </div>
+  </section>
+  <!-- Cuarta sección -->
+  <section class="box-tariff">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h2>Tarifas</h2>
+          <p>Consulta las tarifas LabCar aquí</p>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="start" class="col-xs-2 control-label">
+                <img src="assets/images/shape.png" class="img-responsive" alt="Responsive image">
+              </label>
+              <div class="col-xs-10 padding-left">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese el punto de partida">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="destination" class="col-xs-2 control-label">
+                <img src="assets/images/shape2.png" class="img-responsive" alt="Responsive image">
+              </label>
+              <div class="col-xs-10 padding-left">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese un destino">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="">
+                <button type="button" class="btn btn-default btn-lg center-block btn-app">¡Trazar Ruta!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="map center-block">
+            <img src="assets/images/mapa.png" class="img-responsive center-block" alt="map" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pie de pagina -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-margin">
+          <img src="assets/images/logoBlanco.png" class="img-responsive" alt="Responsive image">
+          <hr>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-sm-offset-3">
+          <ul class="list-unstyled">
+            <li><a href="#">Viaja</a></li>
+            <li><a href="#">Conduce</a></li>
+            <li><a href="#">Aeropuertos</a></li>
+            <li><a href="#">Ciudades</a></li>
+            <li><a href="#">Entregas</a></li>
+            <li><a href="#">¿Como funciona?</a></li>
+            <li><a href="#">Países</a></li>
+            <li><a href="#">Seguridad</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 hidden-xs">
+          <ul class="list-unstyled">
+            <li><a href="#">Oportunidades</a></li>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">API de LabCar</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Desarrolladores</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Laboratoria</a></li>
+            <li><a href="#">Coders</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-12">
+          <ul class="list-inline">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul class="list-unstyled position">
+            <li><div class="img-up"></div></li>
+            <li><div class="img-below"></div></li>
+          </ul>
+        </div>
+        <div class="col-xs-12">
+          <hr>
+          <p>© 2017 LabCar Technologies Inc.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Modal de Inicia Sesión -->
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-colorModal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <figure>
+            <img src="assets/images/usuario.png" class="img-responsive center-block" alt="image user" width="150">
+          </figure>
+        </div>
+        <div class="modal-body bg-colorModalBody">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="sr-only" for="inputUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="inputPassword">Password</label>
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+                <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <button type="button" style="background-color:#F7B617;"class="btn btn-default center-block">LOGIN</button>
+            <h5 class="forgot">Forgot Password?<span style="color:red;"> Click Here</span></h5>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal de Regístrate -->
+  <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-colorModal2">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <button type="button" class="btn btn-default btn-lg btn-color">Ya tienes una cuenta?</button>
+          <h4 class="text-uppercase text-center" style="color:black;">o crea una cuenta nueva</h4>
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="nameOfUser">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="lastNameForUser">Last Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Apellido">
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Correo Electrónico: ejemplo@correo.mx">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inputPhomeNumber" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputOption" placeholder="(Opcional) Código de Invitación">
+            </div>
+            <button type="button" class="btn btn-default btn-lg center-block btn-info">Cómo te enteraste de nosotros?<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>
+            <button type="button" class="btn btn-default btn-lg center-block btn-send">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal de Convierte en conductor -->
+  <div class="modal fade" id="affiliate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-colorModal3">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>¿Tienes vehículo de 4 puertas?</strong></p>
+          <select class="form-control">
+            <option>Si</option>
+            <option>No</option>
+          </select>
+          <p><strong>Marca</strong></p>
+          <select class="form-control">
+            <option>Elige la marca del vehículo</option>
+            <option>Audi</option>
+            <option>Chevrolet</option>
+            <option>Fia</option>
+          </select>
+          <p style="color:#989497;">¿No ves tu vehículo en la lista?Envía un correo electrónico a<br><span style="color:#5E8598;">sociosmdv@uber.com</span></p>
+          <p><strong>Modelo</strong></p>
+          <select class="form-control">
+            <option>Modelo1</option>
+          </select>
+          <p><strong>Año</strong></p>
+          <select class="form-control">
+            <option>2017</option>
+          </select>
+          <p><strong>Número de la matrícula</strong></p>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputText" placeholder="Número de la matrícula">
+          </div>
+          <p class="text-center">La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+          <button type="button" class="btn btn-default btn-lg text-uppercase btn-send">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery ( es necesario para los complementos de JavaScript de Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Enlace a Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Enlace a archivo JavaScript externo -->
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

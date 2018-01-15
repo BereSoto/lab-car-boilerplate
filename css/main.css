@@ -1,1 +1,244 @@
-/* Los estilos de tu proyecto */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+/* Estilos del header*/
+nav {
+  padding: 10px;
+  background-color: white;
+  font-weight: bold;
+}
+
+nav img {
+  padding-top: 8px;
+}
+
+/* Estilos de seccion principal*/
+.bg-image {
+  background: url(../assets/images/taxi.jpg) no-repeat bottom;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 52px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.box-text {
+  padding: 3rem 10rem 2rem;
+}
+
+.box-text img{
+  padding-left: 1rem;
+  width: 8rem;
+}
+
+.line {
+  overflow: visible;
+}
+
+.line:after {
+  content: 'O bien';
+  font-size: 16px;
+  background-color: #f7b617;
+  position: relative;
+  top: -0.8em;
+  padding: 0 5em;
+}
+
+.btn-app {
+  margin-top: 1.5rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.padding {
+  padding-right: 0;
+}
+
+/* Estilos a segunda seccion*/
+.bg-color {
+  background-color: #f7b617;
+  color: inherit;
+}
+
+.box {
+  border: 3px solid #fff;
+  margin: 2rem 1rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Estilos a tercera seccion*/
+.bg-driver {
+  background: url(../assets/images/conduce.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.box-driver {
+  background-color: rgba(0, 0, 0, 0.62);
+  padding: 10rem 2rem;
+}
+
+/* Estilos a cuarta seccion*/
+.box-tariff {
+  background-color: #f7b617;
+}
+
+#inputAddress {
+  background-color: #F7B617;
+  border: 2px solid white;
+}
+
+.padding-left { /*separacion entre simbolos y input*/
+  padding-left: 0;
+}
+
+.map {
+  border: 1px solid #fff;
+  margin: 2rem auto;
+  padding: 10px;
+  width: 100%;/*De lo contrario cambiar a medida relativa 30rem*/
+}
+
+/* Estilos del footer*/
+footer {
+  background-color: #2B2B2B;
+}
+
+.col-margin {
+  margin-top: 2rem;
+}
+
+hr {
+  margin: 20px auto;
+  border-color: #fff;
+  border-width: 1.5px;
+}
+
+a {
+  color: inherit;
+  line-height: 3;
+}
+
+.img-up {
+  background-image: url(../assets/images/enBadgeWebGeneric.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 6rem;
+}
+
+.img-below {
+  background-image: url(../assets/images/appstore.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 6rem;
+}
+
+/* Estilos de modal Inicio Sesion*/
+#myModal img {
+  width: 15rem;
+}
+
+.bg-colorModal {
+   background-color: #08AC9D;
+}
+
+.bg-colorModalBody {
+  background-color: #F5F5F5;
+  margin: 2rem 0;
+  padding: 1.5rem 3rem;
+  width: 30rem;
+  color: black;
+  margin-left: 14.5rem;
+  border-radius: 5px;
+}
+
+.btn-color {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+/* Estilos de modal Registrate*/
+.bg-colorModal2 {
+  background-color: #A9A9A9;
+}
+
+#inputName {
+  width: 282px;
+}
+
+#inputEmail {
+  margin-top: 1.5rem;
+}
+
+.btn-info, .btn-send {
+  display: block;
+}
+
+.btn-info {
+  background-color: #DDDDDD;
+  color: black;
+  width: 100%;
+}
+
+.btn-send {
+  background-color: #5BC0DE;
+  color: white;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Estilos de modal Convierte en conductor*/
+.bg-colorModal3 {
+  background-color: #A9A9A9;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .position {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.8rem;
+  }
+
+  .box {
+    transform: translateX(-10%);
+  }
+
+  .bg-driver {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .box-driver {
+    width: 35%;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .img-up {
+    background-image: url(../assets/images/appstore.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5rem;
+    width: 30rem;
+  }
+
+  .img-below {
+    background-image: url(../assets/images/enBadgeWebGeneric.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5rem;
+    margin-top: 2rem;
+    width: 30rem;
+  }
+}
